@@ -1,11 +1,6 @@
 # Bienvenidos
-<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-<df-messenger
-  intent="WELCOME"
-  chat-title="Logica"
-  agent-id="e7320d6e-a27e-4a8c-8706-f0eee1dc3e5e"
-  language-code="es"
-></df-messenger>
+
+<iframe height="430" width="350" src="https://bot.dialogflow.com/e7320d6e-a27e-4a8c-8706-f0eee1dc3e5e"></iframe>
 <div>Teachable Machine Image Model</div>
 <button type="button" onclick="init()">Start</button>
 <div id="webcam-container"></div>
