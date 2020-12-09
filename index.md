@@ -15,12 +15,12 @@
 
     /the link to your model provided by Teachable Machine export panel
    
-   /const URL = "https://teachablemachine.withgoogle.com/models/AQOZ833z6/";
+    /const URL = "https://teachablemachine.withgoogle.com/models/AQOZ833z6/";
 
-   /let model, webcam, labelContainer, maxPredictions;
+    /let model, webcam, labelContainer, maxPredictions;
 
     // Load the image model and setup the webcam
-   / async function init() {
+   async function init() {
         const modelURL = URL + "model.json";
         const metadataURL = URL + "metadata.json";
 
@@ -28,11 +28,11 @@
         // Refer to tmImage.loadFromFiles() in the API to support files from a file picker
         // or files from your local hard drive
         // Note: the pose library adds "tmImage" object to your window (window.tmImage)
-   /model = await tmImage.load(modelURL, metadataURL);
+   model = await tmImage.load(modelURL, metadataURL);
         maxPredictions = model.getTotalClasses();
 
         // Convenience function to setup a webcam
-   //const flip = true; 
+   const flip = true; 
         webcam = new tmImage.Webcam(200, 200, flip); 
         await webcam.setup(); 
         await webcam.play();
